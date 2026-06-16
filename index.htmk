@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Head Checklist & Đóng Gói Dự Án Chuẩn</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>HTML Head Checklist</h1>
+      <p class="subtitle">Cẩm nang cấu hình chuẩn và quy trình đóng gói dự án lên GitHub</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      
+      <section class="card">
+        <h2><span class="icon">✅</span> Bảng kiểm tra cấu hình thẻ Head</h2>
+        <p>Đảm bảo file HTML của bạn luôn có đầy đủ các thành phần này trước khi bàn giao:</p>
+        
+        <table class="checklist-table">
+          <thead>
+            <tr>
+              <th>Thành phần</th>
+              <th>Cú pháp mẫu</th>
+              <th>Tác dụng cốt lõi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Meta Charset</strong></td>
+              <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+              <td>Chống lỗi font, hiển thị chuẩn tiếng Việt có dấu.</td>
+            </tr>
+            <tr>
+              <td><strong>Meta Viewport</strong></td>
+              <td><code>&lt;meta name="viewport" ...&gt;</code></td>
+              <td>Hỗ trợ hiển thị co giãn, chuẩn Responsive trên điện thoại.</td>
+            </tr>
+            <tr>
+              <td><strong>Title rõ nghĩa</strong></td>
+              <td><code>&lt;title&gt;Tiêu đề trang&lt;/title&gt;</code></td>
+              <td>Hiển thị tên trang trên tab trình duyệt và Google Search.</td>
+            </tr>
+            <tr>
+              <td><strong>Liên kết CSS ngoài</strong></td>
+              <td><code>&lt;link rel="stylesheet" href="..."&gt;</code></td>
+              <td>Tải cấu trúc giao diện ngoài, đặt gọn gàng trong thẻ head.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card bg-light">
+        <h2><span class="icon">✍️</span> Quy tắc tổ chức mã nguồn (Clean Code)</h2>
+        <div class="rules-grid">
+          <div class="rule-item">
+            <h3>Bình luận (Comments)</h3>
+            <p>Sử dụng cú pháp <code>&lt;!-- Nội dung --&gt;</code> để phân tách các khu vực lớn (Header, Main, Footer). Không lạm dụng ở các thẻ hiển nhiên.</p>
+          </div>
+          <div class="rule-item">
+            <h3>Thụt lề (Indentation)</h3>
+            <p>Các phần tử con lùi vào 1 mức cố định (2 hoặc 4 khoảng trắng) so với thẻ cha. Thẻ đóng luôn phải nằm thẳng hàng dọc với thẻ mở.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><span class="icon">🛠️</span> Hướng dẫn kiểm tra liên kết bằng DevTools</h2>
+        <p>Nếu trang web không nhận CSS hoặc JavaScript, hãy thực hiện quy trình sau:</p>
+        <ol class="debug-steps">
+          <li>Ấn phím <strong>F12</strong> (hoặc chuột phải chọn <em>Kiểm tra</em>) để mở bảng công cụ.</li>
+          <li>Chuyển sang tab <strong>Console</strong>. Nếu thấy dòng thông báo lỗi màu đỏ dạng <code class="text-danger">404 Not Found</code>, đường dẫn file của bạn đang bị sai.</li>
+          <li>Quay lại kiểm tra thuộc tính <code>href</code> của thẻ link hoặc <code>src</code> của thẻ script để sửa lại cho khớp với tên thư mục vật lý.</li>
+        </ol>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Mini-project 2. Thiết kế và đóng gói chuẩn theo yêu cầu bài học.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
